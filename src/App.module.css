@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(89 157 241);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.image {
+  width: 370px;
+  margin-top: 50px;
+}
+@media (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
+  .image {
+    width: 100%;
+  }
+}
+#backgroundImage{z-index: 1;}
+
+#backgroundImage:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-image: url(https://image.freepik.com/free-vector/conceptual-coronavirus-illustration-3d-virus-form-abstract-background-pathogen-visualization_1217-1662.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+    height:100%;
+    width:100%;
+ }
+
+.main{
+   height:320px;
+   width:320px;
+   margin:auto;
+   background-color:green;
+   z-index:-1;
+   opacity: 1;
+   filter:alpha(opacity=100);
+}
